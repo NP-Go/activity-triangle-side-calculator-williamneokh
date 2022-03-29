@@ -22,11 +22,11 @@ func main() {
 	var angle float64
 
 	fmt.Println("Enter the first length of the triangle: ")
-	fmt.Scanln(&length1)
+	_, _ = fmt.Scanln(&length1)
 	fmt.Println("Enter the second length of the triangle: ")
-	fmt.Scanln(&length2)
+	_, _ = fmt.Scanln(&length2)
 	fmt.Println("Enter the angle between the two lengths: ")
-	fmt.Scanln(&angle)
+	_, _ = fmt.Scanln(&angle)
 
 	calculateSide(length1, length2, angle)
 }
