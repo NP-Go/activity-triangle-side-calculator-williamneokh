@@ -9,8 +9,9 @@ func calculateSide(length1, length2, angle float64) float64 {
 
 	//Insert the code here
 	//c^2 = a^2 + b^2 - 2*a*b*cos(c)
+	angleRad := angle * ((math.Pi) / 180)
 
-	length3 := math.Sqrt(math.Pow(length1, 2) + math.Pow(length2, 2) - 2*length1*length2*math.Cos(angle))
+	length3 := math.Sqrt(math.Pow(length1, 2) + math.Pow(length2, 2) - 2*length1*length2*math.Cos(angleRad))
 	//Do not remove this line
 	fmt.Println("The 3rd length of the triange is", length3)
 	return length3
